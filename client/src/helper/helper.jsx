@@ -1,7 +1,7 @@
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 
-axios.defaults.baseURL = "http://localhost:8080"; // SOLUTION: https://stackoverflow.com/questions/70709987/how-to-load-environment-variables-from-env-file-using-vite
+axios.defaults.baseURL = "http://127.0.0.1:8080"; // SOLUTION: https://stackoverflow.com/questions/70709987/how-to-load-environment-variables-from-env-file-using-vite
 // axios.defaults.baseURL = "'http://localhost:8080'"; // ISSUE: React Uncaught ReferenceError: process is not defined.
 //process.env.REACT_APP_BASE_URL;
 //import.meta.env.REACT_APP_BASE_URL; // Still get an issue "POST http://localhost:5173/api/authenticate 404 (Not Found)" https://vitejs.dev/guide/env-and-mode.html
