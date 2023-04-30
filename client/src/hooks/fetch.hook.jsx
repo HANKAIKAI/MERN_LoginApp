@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { getUsername } from "../helper/helper";
 
-axios.defaults.baseURL = __REACT_APP_BASE_URL__;
+axios.defaults.baseURL = "http://localhost:8080";
 
 /** custom hook */
 export default function useFetch(query) {
